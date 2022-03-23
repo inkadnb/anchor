@@ -87,7 +87,11 @@ module.exports = {
     },
     stethEthFeed: {
       1:"0xAb55Bf4DfBf469ebfe082b7872557D1F87692Fe6"
-    },    
+    },
+    ftmFeed: {
+      1:"0x2de7e4a9488488e0058b95854cc2f7955b35dc9b",
+      4:"0xc751E86208F0F8aF2d5CD0e29716cA7AD98B5eF5"
+    },
     deployer:{
       default:0
     },

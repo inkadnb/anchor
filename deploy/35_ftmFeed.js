@@ -4,12 +4,15 @@ module.exports = async ({
   }) => {
     console.log("35. Deploy Ftm Feed")
     const {deploy} = deployments;
-    const {deployer} = await getNamedAccounts();
+    const {deployer, ftmFeed, ethFeed} = await getNamedAccounts();
 
     await deploy('FtmFeed', {
-      from: deployer
+      from: deployer,
+      args:[
+        ftmFeed,
+        ethFeed
+      ]
     });
-
   };
 
   module.exports.tags = ['FtmFeed'];
